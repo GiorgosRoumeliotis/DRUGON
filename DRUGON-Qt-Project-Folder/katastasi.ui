@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Katastasi</class>
+ <widget class="QDialog" name="Katastasi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>370</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ΚΑΤΑΣΤΑΣΗ</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">*{
+	background:#e3d7f0;
+}
+.QPushButton{
+	border-radius: 8px;
+	background:#557698;
+	color:white;
+}
+
+.QPushButton:hover{
+	background:#5696b6;
+}
+
+#onoma_l{
+	font-size:12px;
+	color:#193c69;
+}
+
+#mm_l{
+	font-size:12px;
+	color:#193c69;
+}
+
+#poso_l{
+	font-size:12px;
+	color:#193c69;
+}
+
+
+#arithomos_l{
+	font-size:12px;
+	color:#193c69;
+}
+
+#exp_l{
+	font-size:12px;
+	color:#193c69;
+}
+</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="ok">
+       <property name="text">
+        <string>Αποθηκεύτηκε !</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Αποθήκευση</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="printer">
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Εκτύπωση</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="3" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>728</width>
+          <height>288</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="1" column="0">
+          <layout class="QVBoxLayout" name="medicine"/>
+         </item>
+         <item row="1" column="4">
+          <layout class="QVBoxLayout" name="expday"/>
+         </item>
+         <item row="1" column="3">
+          <layout class="QVBoxLayout" name="arithmos"/>
+         </item>
+         <item row="1" column="1">
+          <layout class="QVBoxLayout" name="mm"/>
+         </item>
+         <item row="1" column="2">
+          <layout class="QVBoxLayout" name="posotita"/>
+         </item>
+         <item row="0" column="0" alignment="Qt::AlignLeft|Qt::AlignTop">
+          <widget class="QLabel" name="onoma_l">
+           <property name="text">
+            <string>ΟΝΟΜΑ</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1" alignment="Qt::AlignLeft|Qt::AlignTop">
+          <widget class="QLabel" name="mm_l">
+           <property name="text">
+            <string>ΜΜ</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2" alignment="Qt::AlignLeft|Qt::AlignTop">
+          <widget class="QLabel" name="poso_l">
+           <property name="text">
+            <string>ΠΟΣΟΤΗΤΑ</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3" alignment="Qt::AlignLeft|Qt::AlignTop">
+          <widget class="QLabel" name="arithomos_l">
+           <property name="text">
+            <string>ΑΡΙΘΜΟΣ</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4" alignment="Qt::AlignLeft|Qt::AlignTop">
+          <widget class="QLabel" name="exp_l">
+           <property name="text">
+            <string>ΗΜ. ΛΗΞΗΣ</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="0">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="2">
+      <widget class="QPushButton" name="search">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>22</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Αναζήτηση</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="s_line">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QComboBox" name="categories"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>categories</tabstop>
+  <tabstop>s_line</tabstop>
+  <tabstop>search</tabstop>
+  <tabstop>scrollArea</tabstop>
+  <tabstop>printer</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
